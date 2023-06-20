@@ -12,7 +12,20 @@ final class RMTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabs()
+//        testIfURLPathIsCorrect()
     }
+    
+    // My own function to test if the URL path is correct
+//    private func testIfURLPathIsCorrect() {
+//        let request = RMRequest(
+//            endpoint: .location,
+//            pathComponents: ["1"],
+//            queryComponents: [
+//            URLQueryItem(name: "name", value: "rick"),
+//            URLQueryItem(name: "status", value: "alive")
+//            ])
+//        print(request.url)
+//    }
     
     private func setupTabs() {
         let characterVC = RMCharacterViewController()
